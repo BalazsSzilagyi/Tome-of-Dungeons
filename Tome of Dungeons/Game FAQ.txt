@@ -1,0 +1,11 @@
+Use W / A / S / D or w / a / s / d to move.
+
+Symbol meanings:
+
+# for Walls				- for Doors
+$ for Gold				H for NPC
+£ for Shop				Q for Quest
+X for Treasure chest	@ for Player
+G for Goblin			O for Orc
+S for Snake				B for Bandit
+D for Dragon			W for Wolf

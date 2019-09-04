@@ -1,0 +1,151 @@
+OUTPUTS
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Welcome message
+Instructions
+Menu
+ - Option 1 - Play Game
+ - Option 2 - Load Game
+ - Option 3 - Quit
+
+
+Play Game
+
+Game Map
+ ____________
+|X| | |
+|
+|
+|____________
+
+Key to symbols
+
+Explanation:
+
+Ask for user input :
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+INPUTS
+
+ -> User needs to enter an option on main menu
+ -> User needs to enter name of file to load OR they select from a list of pre-saved files
+ -> 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Rules
+ - Objective of the Game: 
+ - Different scenarios
+ - Rules in the scenarios
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Char x,y = 4,5   	'@'
+Enemy 1 x,y  = 0,0	'
+Boss x,y    = 6,8
+
+Map
+ - Look at each characters x,y position.
+ - replace that coordainte in the map array with the symbol for that char
+ - Draw the map arry
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+class map
+	array[width][height]
+	char wall
+	char empty_room
+
+	void createNewMap()
+	array[] GetMap
+	{
+		return mapArray
+	}
+
+
+class player
+	string name
+	playerX
+	playerY
+
+
+
+Class Display
+	arrayToRepresentFullDisplay
+	AddMap(map)
+	{
+		place the map into the main display array
+	}
+	Add char
+	{
+		place the character into the map/main display
+	}
+
+
+Put arrays in classes and group them up
+
+The screen covered in a big array and divide it up
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Returning key's pressed on keyboard:
+requirement is the <conio.hu> header
+
+#include "pch.h"
+#include <iostream>
+#include <string>
+#include <conio.h> 
+
+using namespace std;
+
+int main()
+{
+	char input;
+
+	while (true) {
+		input = _getch();
+		cout << "You entered: " << input << endl;
+	}
+
+	return 0;
+}
+
+https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/getch-getwch?view=vs-2019
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+1,	Store game level in a vector if strings.
+	Each string is a row in the level.
+	The vector of strings is like a 2D array.
+
+vector <string> levelData;
+if I want to get the object at 3,3 I can call
+
+char object = levelData[3][3];
+
+2,	Whenever the player or monester wants to move in a direction, first check to see what char is on the 
+	board in that direction, and use a switch statment to evaluate what should happen.
+
+3,	Use an ifstream and the getline function to load the level from a .txt file.
+	Load one row at a time and put them in a string, then push bakc each string to the vector.
+
+4,	Surround the end of the game with walls so the player has boundaries. It can crash the program.
+
+5,	Create a Monster class and store the monsters in a vector <Monster> monster;
+	Then, each time it loops through the main game oop, it will loop through this monster array and
+	randomly move each one. It can also check, if the player is nearby, and attack
+	the player if he is there.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Engine.h respnsible for handling all the game logics, rules and connecting everything together
+Player.h player properties etc...
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Declarations in the header file, makes the header file nice and clear
+Implementation of the functions in the Cpp file
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////

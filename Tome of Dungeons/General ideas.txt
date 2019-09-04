@@ -1,0 +1,40 @@
+A Roguelike is a subgenre of role-playing video game characterized by a dungeon crawl through procedurally generated levels, turn-based gameplay, tile-based graphics, and permanent death of the player character.
+
+Done=====>>  1, Load the ASCII levels from a level file!
+	this makes the levels editable by others, without using our code, also reusable, changes can be made to the game without 	recompiling it
+
+Done=====>>  2, Allow Player movment using w, a, s, d!
+
+Done	3, Have some enemies that randomly moves around, allow the payer to attack enemies, or enemies attack the player
+		Monsters or NPC check in its range for interaction
+
+4, NPC to interract which gives quests, provides shop etc...
+	Interactable NPS with dialogs, quests, etc..
+
+Done=====>> 5, Player can not walkt through walls, solid tiles
+			Solid and dynamic tile
+
+6, Game can be saved and re-loaded
+	save the state of the game, where the player, monsters and npcs located, items etc...
+
+7, Items, money, shop in the game
+	Items and its decriptions added to the game, shop function to buy and sell items
+	
+Done		8, Player level up with exp
+			Player accquite exp after killing enemies or completing quests	
+
+8, Multiple levels
+	Player can cross to multiple maps
+
+9, Using colors
+	Different colors for different enemies, places, items etc...
+
+Symbol meanings:
+
+# for Walls				- for Doors
+$ for Gold				H for NPC
+£ for Shop				Q for Quest
+X for Treasure chest	@ for Player
+G for Goblin			O for Orc
+S for Snake				B for Bandit
+D for Dragon			W for Wolf

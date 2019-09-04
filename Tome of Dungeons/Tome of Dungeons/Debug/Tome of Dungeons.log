@@ -1,0 +1,3 @@
+﻿  Player.cpp
+c:\users\balazs\desktop\tome of dungeons\tome of dungeons\player.cpp(28): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Tome of Dungeons.vcxproj -> C:\Users\Balazs\Desktop\Tome of Dungeons\Debug\Tome of Dungeons.exe
